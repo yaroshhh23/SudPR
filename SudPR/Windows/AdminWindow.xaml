@@ -1,0 +1,76 @@
+﻿<Window x:Class="SudPR.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudPR"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="AdminWindow"
+        Height="600" 
+        Width="900">
+    <Grid x:Name="Admin">
+        <Viewbox Stretch="Uniform" Grid.ColumnSpan="2">
+            <Border Background="White" 
+                    VerticalAlignment="Center" 
+                    Padding="30" 
+                    Height="400" 
+                    Width="600">
+                <StackPanel>
+                    <Grid Background="White" 
+                      Margin="0, 0, 0, 20">
+                        <Button Content="Выйти"
+                            HorizontalAlignment="Right" 
+                            Style="{StaticResource MaterialDesignFlatButton}" 
+                                Foreground="Black" Click="Button_Click_6" />
+                    </Grid>
+                    <Grid Background="White" 
+                          Margin="0, 0, 0, 20" Height="60">
+                        <Button Content="История заявок" 
+                                Margin="70,16,295,12" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black" 
+                                Background="LightGray"  
+                                Click="Button_Click"/>
+                        <Button Content="Создание заявок" 
+                                Margin="295,16,70,12" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black" 
+                                Background="LightGray"
+                                Click="Button_Click_1"/>
+                    </Grid>
+                    <Grid Background="White" 
+                          Margin="0, 0, 0, 20" Height="60">
+                        <Button Content="Статус заявки" 
+                                Margin="70,16,295,12" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black" 
+                                Background="LightGray"
+                                Click="Button_Click_2"/>
+                        <Button Content="Заявки на контроль" 
+                                Margin="295,16,70,12" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black" 
+                                Background="LightGray"
+                                Click="Button_Click_3"/>
+                    </Grid>
+                    <Grid Background="White" 
+                          Margin="0, 0, 0, 20" Height="60">
+                        <Button Content="Новые заявки" 
+                                Margin="70,16,295,12" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black" 
+                                Background="LightGray"
+                                Click="Button_Click_4"/>
+                        <Button Content="Отчеты" 
+                                Margin="295,16,70,12" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black" 
+                                Background="LightGray"
+                                Click="Button_Click_5"/>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Viewbox>
+    </Grid>
+</Window>

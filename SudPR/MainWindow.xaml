@@ -1,0 +1,49 @@
+﻿<Window x:Class="SudPR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudPR"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" 
+        Height="600" 
+        Width="900">
+    <Grid>
+        <Viewbox Stretch="Uniform">
+            <Border MinWidth="400" 
+                    Background="White" 
+                    VerticalAlignment="Center" 
+                    Padding="30" 
+                    MaxWidth="500"  
+                    Height="400" 
+                    Width="500">
+                <StackPanel>
+                    <TextBlock FontSize="20"
+                               HorizontalAlignment="Center" 
+                               TextWrapping="Wrap" 
+                               Text="TechnoService"/>
+                    <Grid Background="White" 
+                          Margin="0, 0, 0, 20"/>
+                    <Grid Background="White" 
+                          Margin="0, 0, 0, 30"/>
+                    <TextBox x:Name="LoginField" 
+                             materialDesign:HintAssist.Hint="Введите логин"
+                             Style="{StaticResource ResourceKey=MaterialDesignFilledTextBox}"/>
+                    <PasswordBox x:Name="PasswordField" 
+                                 materialDesign:HintAssist.Hint="Введите пароль"
+                                 Style="{StaticResource ResourceKey=MaterialDesignFloatingHintPasswordBox}"/>
+                    <Grid Background="White" 
+                           Margin="0, 0, 0, 20"/>
+                    <Button x:Name="LoginButton"
+                            Content="Войти"
+                            BorderBrush="Transparent" 
+                            Foreground="Black" 
+                            Background="LightGray" 
+                            FontFamily="Bahnschrift Light" 
+                            Width="99" Click="LoginButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Viewbox>
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+﻿<Window x:Class="SudPR.MasterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudPR"
+        mc:Ignorable="d"
+        Title="MasterWindow" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="600" 
+        Width="900">
+    <Grid x:Name="Master">
+        <Viewbox Stretch="Uniform" Grid.ColumnSpan="2">
+            <Border Background="White" 
+                    VerticalAlignment="Center" 
+                    Padding="30" 
+                    Height="400" 
+                    Width="600">
+                <Grid>
+                    <TextBlock TextWrapping="Wrap" 
+                               Text="Текущие заявки" 
+                               VerticalAlignment="Top" 
+                               FontSize="30" 
+                               Foreground="Black" 
+                               FontFamily="Bahnschrift Light" 
+                               Margin="165,25,143,0" 
+                               Width="NaN" 
+                               Height="42"/>
+                    <Button Margin="0,10,10,0" 
+                            Content="Выход" 
+                            Style="{StaticResource MaterialDesignFlatButton}"
+                            Foreground="Black" 
+                            FontSize="15" 
+                            Width="105" 
+                            Height="33" 
+                            HorizontalAlignment="Right" 
+                            VerticalAlignment="Top" Click="Button_Click_1"/>
+                    <DataGrid Margin="0,65,0,0" 
+                              Width="NaN" 
+                              Height="239" 
+                              VerticalAlignment="Top" />
+                    <Button Margin="170,313,158,0" 
+                            Content="История заявок" 
+                            BorderBrush="Transparent" 
+                            Foreground="Black" 
+                            Background="LightGray" 
+                            FontFamily="Bahnschrift Light" 
+                            FontSize="20" 
+                            Width="NaN" 
+                            Height="39" 
+                            VerticalAlignment="Top" Click="Button_Click"/>
+                </Grid>
+
+            </Border>
+        </Viewbox>
+    </Grid>
+</Window>
